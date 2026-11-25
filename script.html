@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event listener</title>
+    </head>
+    <body>
+        <button id="actionButton">Click</button>
+        <p id="helloeveryone">waiting for your Click</p>
+        <script>
+            const button=document.getElementById('actionButton');
+            const textMessage=document.getElementById('helloeveryone');
+            function handleButtonClick(){
+                textMessage.textContent='button was successfull';
+                textMessage.style.color='blue';
+            }
+            button.addEventListener('click',handleButtonClick);
+        </script>
+    </body>
+</html>

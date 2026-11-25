@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>image Border</h1>
+    <img id="photo" src="images.jpg" height="100" width="200" alt="sample image">
+    <br>
+    <button id="addBorderBtn">add button</button>
+    <script>
+        document.getElementById("addBorderBtn").addEventListener("click",function(){
+            const image=document.getElementById("photo");
+            image.style.border="4px solid blueviolet";
+        });
+        
+    </script>
+    </body>
+</html>
